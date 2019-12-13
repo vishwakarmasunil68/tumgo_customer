@@ -1,0 +1,71 @@
+<!--
+  Generated template for the ViewTicketPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="primary">
+
+    <ion-buttons center text-center>
+      <button style="background: transparent;" text-center>
+        <div class="flex_center_content" style="margin-left: -70px;">
+          <img src="assets/imgs/logo.png" style="width: 20px;">
+          <span text-color="title_white"
+                style="color: #FFFFFF;font-weight: 900;font-size: 17px;margin-top: 2px;margin-left: 7px;font-family: nexa_bold;">TUMGO</span>
+        </div>
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div style="height: 100%;">
+    <div style="height: 40%;background-color: #BDBDBD;border-radius: 10px;">
+
+    </div>
+    <div style="height: 60%;">
+      <div style="display: flex;align-items: center;">
+        <p style="color: #4e51a3;font-size: 17px;font-weight: bolder;font-family: nexa_bold;">Vehicle Model :- </p>
+        <p style="font-size: 16px;margin-left: 5px;font-family: nexa_bold;">Merceded Benz CLA</p>
+      </div>
+      <div style="display: flex;align-items: center;">
+        <p style="color: #4e51a3;font-size: 17px;font-weight: bolder;font-family: nexa_bold;">Vehicle :- </p>
+        <p style="font-size: 16px;margin-left: 5px;font-family: nexa_bold;">RJ 14 BE 7214</p>
+      </div>
+      <div style="display: flex;align-items: center;">
+        <p style="color: #4e51a3;font-size: 17px;font-weight: bolder;font-family: nexa_bold;">Date of Occurance :- </p>
+        <p style="font-size: 16px;margin-left: 5px;font-family: nexa_bold;">20-10-2019</p>
+      </div>
+      <div style="display: flex;align-items: center;">
+        <p style="color: #4e51a3;font-size: 17px;font-weight: bolder;font-family: nexa_bold;">Address :- </p>
+        <p style="font-size: 16px;margin-left: 5px;font-family: nexa_bold;">PratapNagar, Jaipur</p>
+      </div>
+      <div style="display: flex;align-items: center;">
+        <p style="color: #4e51a3;font-size: 17px;font-weight: bolder;font-family: nexa_bold;">Status :- </p>
+        <p style="font-size: 16px;margin-left: 5px;font-family: nexa_bold;">Ticket Generated</p>
+      </div>
+      <ion-row style="margin-top: 10px;">
+        <ion-col col-6>
+          <div *ngIf="show_left">
+            <img src="assets/imgs/ic_left_arrow.png" style="width: 40px;">
+          </div>
+        </ion-col>
+        <ion-col col-6 text-end>
+          <div *ngIf="show_right">
+            <img src="assets/imgs/ic_right_arrow.png" style="width: 40px;">
+          </div>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+
+
+</ion-content>
+<ion-footer no-padding>
+  <div class="flex_center_content" style="background-color: #4e51a3;height: 45px;display: flex;" (click)="logoutUser()">
+    <img src="assets/imgs/ic_logout.png" style="width: 17px;">
+    <p style="color: #FFFFFF;font-weight: 900;font-size: 17px;font-family: nexa_bold;padding-top: 0px;margin-left: 10px;">LOGOUT</p>
+  </div>
+</ion-footer>
